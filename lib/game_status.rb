@@ -52,10 +52,6 @@ end
 def winner(board)
   res = won?(board)
   
-  if res
-     board[res[0]]
-  else
-    false || nil 
-  end
+ res ? board[res[0]] : false || nil 
 end 
 
